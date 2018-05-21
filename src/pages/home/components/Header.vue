@@ -4,7 +4,7 @@
       <div class="iconfont back-icon">&#xe624;</div>
     </div>
     <div class="header-input">
-      <span class="iconfont">&#xe632;</span>
+      <span class="iconfont search-icon">&#xe632;</span>
       <input type="text" placeholder="输入城市/景点">
     </div>
     <div class="header-right">
@@ -15,8 +15,8 @@
 
 <script>
 export default {
-  name: 'HomeHeader'
-}
+  name: "HomeHeader"
+};
 </script>
 
 <style lang="stylus" scoped>
@@ -42,6 +42,8 @@ export default {
     background #fff
     border-radius 0.1rem
     color #ccc
+    .search-icon
+      vertical-align middle
   .header-right
     min-width 1.04rem
     padding 0 0.1rem
