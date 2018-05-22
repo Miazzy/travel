@@ -7,9 +7,11 @@
       <span class="iconfont search-icon">&#xe632;</span>
       <input type="text" placeholder="输入城市/景点">
     </div>
-    <div class="header-right">
-      <span class="iconfont arrow-icon">&#xe64a;</span>
-    </div>
+    <router-link to="/city">
+      <div class="header-right">
+        <span class="iconfont arrow-icon">&#xe64a;</span>
+      </div>
+    </router-link>
   </div>
 </template>
 
