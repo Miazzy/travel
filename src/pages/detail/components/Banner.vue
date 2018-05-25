@@ -1,17 +1,17 @@
 <template>
   <div>
     <div class="banner" @click="handleBannerClick">
-      <img src="http://img1.qunarzz.com/sight/p0/1608/7c/7cddf77a474db832a3.img.jpg_600x330_e8da730a.jpg" class="banner-img">
+      <img :src="bannerImg" class="banner-img">
       <div class="banner-info">
-        <div class="banner-title">长岛(AAAA景区)</div>
+        <div class="banner-title">{{this.name}}</div>
         <div class="banner-number">
           <span class="iconfont banner-icon">&#xe692;</span>
-          3
+          {{this.gallaryImgs.length}}
         </div>
       </div>
     </div>
 
-    <gallary :imgs="imgs" v-show="showGallary" @close="cancelGallary" />
+    <gallary :imgs="gallaryImgs" v-show="showGallary" @close="cancelGallary" />
   </div>
 </template>
 
@@ -23,14 +23,14 @@ export default {
   components: {
     Gallary
   },
+  props: {
+    name: String,
+    bannerImg: String,
+    gallaryImgs: Array
+  },
   data() {
     return {
-      showGallary: false,
-      imgs: [
-        "http://img1.qunarzz.com/sight/p0/1412/83/add511995b74a8716ede92ce96e721e7.water.jpg_710x420_8f304d7c.jpg",
-        "http://img1.qunarzz.com/sight/p0/1412/23/714c87ad3126b2e1a675bea83351f80c.water.jpg_710x420_dd1540b3.jpg",
-        "http://img1.qunarzz.com/sight/p0/1412/76/17b04ddb06a86ee544c5cb544742446e.water.jpg_710x420_8183a0e9.jpg"
-      ]
+      showGallary: false
     };
   },
   methods: {
