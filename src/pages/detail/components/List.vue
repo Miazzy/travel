@@ -39,25 +39,24 @@ export default {
     padding 0 0.2rem
     border-bottom 1px solid #ddd
     height 0.88rem
-    color #333
     font-size 0.32rem
     line-height 0.88rem
   .ticket-item
+    .item-title-icon
+      position relative
+      left 0.06rem
+      top 0.06rem
+      display inline-block
+      width 0.36rem
+      height 0.36rem
+      background url('http://s.qunarzz.com/piao/image/touch/sight/detail.png') 0 -0.45rem no-repeat
+      margin-right 0.1rem
+      background-size 0.4rem 3rem
     .ticket-title
       line-height 0.8rem
       font-size 0.32rem
       padding 0 0.2rem
       border-bottom 1px solid #eee
-      .item-title-icon
-        position relative
-        left 0.06rem
-        top 0.06rem
-        display inline-block
-        width 0.36rem
-        height 0.36rem
-        background url('http://s.qunarzz.com/piao/image/touch/sight/detail.png') 0 -0.45rem no-repeat
-        margin-right 0.1rem
-        background-size 0.4rem 3rem
     .ticket-side
       padding 0 0.2rem
 </style>
